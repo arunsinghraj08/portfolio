@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arun Singh | Portfolio</title>
+  <style>
+    :root {
+      --primary: #2563eb;
+      --dark: #1e293b;
+      --light: #f8fafc;
+      --border: #e2e8f0;
+      --text: #334155;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--light);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 24px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #ffffff;
+      padding: 36px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 28px;
+    }
+
+    .photo-box {
+      width: 140px;
+      height: 140px;
+      border: 2px dashed #94a3b8;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #64748b;
+      font-size: 14px;
+      background-color: #f1f5f9;
+      flex-shrink: 0;
+      overflow: hidden;
+    }
+
+    .photo-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .header-details h1 {
+      font-size: 32px;
+      color: var(--dark);
+      margin-bottom: 6px;
+    }
+
+    .tagline {
+      font-size: 17px;
+      color: var(--primary);
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .info-list {
+      font-size: 14px;
+      color: #64748b;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .info-list a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .info-list a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-top: 30px;
+    }
+
+    h2 {
+      font-size: 20px;
+      color: var(--dark);
+      border-left: 4px solid var(--primary);
+      padding-left: 10px;
+      margin-bottom: 16px;
+    }
+
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .badge {
+      background: #eff6ff;
+      color: var(--primary);
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-weight: 500;
+      border: 1px solid #bfdbfe;
+    }
+
+    .badge.network {
+      background: #f0fdf4;
+      color: #166534;
+      border-color: #bbf7d0;
+    }
+
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 18px;
+      margin-bottom: 14px;
+      background: #ffffff;
+      transition: box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+
+    .card h3 {
+      font-size: 17px;
+      color: var(--dark);
+      margin-bottom: 6px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #64748b;
+      margin-bottom: 8px;
+    }
+
+    .project-link {
+      display: inline-block;
+      color: var(--primary);
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .project-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <!-- Apni image link lagane ke liye: <img src="your-photo.jpg" alt="Arun Singh"> -->
+      <div class="photo-box">
+        [ Photo Here ]
+      </div>
+
+      <div class="header-details">
+        <h1>Arun Singh</h1>
+        <div class="tagline">Full-Stack Java & MERN Developer | Network Certified</div>
+        <div class="info-list">
+          <div><strong>DOB:</strong> 12 April 1985</div>
+          <div><strong>Email:</strong> <a href="mailto:Arunsinghraj08@gmail.com">Arunsinghraj08@gmail.com</a></div>
+          <div><strong>GitHub:</strong> <a href="https://github.com/arunsinghraj08" target="_blank">github.com/arunsinghraj08</a></div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <h2>About Me</h2>
+      <p>
+        Software developer with core expertise in <strong>Java</strong>, modern frontend interfaces using <strong>React.js</strong>, and robust backends via <strong>Node.js</strong>. Solid networking infrastructure background with <strong>CCNA & CCNP</strong> certifications.
+      </p>
+    </section>
+
+    <section>
+      <h2>Featured Projects</h2>
+      <div class="card">
+        <h3>AI Web Application</h3>
+        <p>
+          An interactive, modern web application featuring AI-driven capabilities and responsive UI/UX architecture.
+        </p>
+        <a class="project-link" href="https://myaiweb-site-project.web.app" target="_blank">
+          🔗 Live Demo: myaiweb-site-project.web.app &rarr;
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills & Certifications</h2>
+      <div class="badges">
+        <span class="badge">Java</span>
+        <span class="badge">React.js</span>
+        <span class="badge">Node.js</span>
+        <span class="badge">JavaScript / HTML5 / CSS3</span>
+        <span class="badge">REST APIs</span>
+        <span class="badge network">CCNA (Cisco Certified Network Associate)</span>
+        <span class="badge network">CCNP (Cisco Certified Network Professional)</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      
+      <div class="card">
+        <h3>Master of Computer Applications (MCA)</h3>
+        <p>Sikkim Manipal University (SMU) | 2024 – 2026</p>
+      </div>
+
+      <div class="card">
+        <h3>Bachelor's Degree (Graduation)</h3>
+        <p>Magadh University | 2003 – 2006</p>
+      </div>
+
+      <div class="card">
+        <h3>Intermediate (12th)</h3>
+        <p>Completed: 2023</p>
+      </div>
+
+      <div class="card">
+        <h3>Matriculation (10th)</h3>
+        <p>Completed: 2021</p>
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>
